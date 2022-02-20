@@ -1,17 +1,15 @@
-import Product from "./pages/Product";
 import Home from "./pages/Home";
-import ProductList from "./pages/ProductList";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
-import Cart from "./pages/Cart";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Products from "./components/Products";
 import './App.css'
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
     <Router>
     <div className="container">
+    <Navbar />
       <Switch>
         <Route exact path="/">
           <Home />
@@ -25,13 +23,7 @@ const App = () => {
           <Register />
         </Route>
 
-        <Route path="/cart">
-          <Cart />
-        </Route>
-        
-        <Route path="/product">
-          <Product />
-        </Route>
+       
         
         
       </Switch>

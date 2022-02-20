@@ -12,6 +12,7 @@ import { mobile } from "../responsive";
 
 const Container = styled.div`
   display: flex;
+  background-color: whitesmoke;
   ${mobile({ flexDirection: "column" })}
 `;
 
@@ -20,6 +21,7 @@ const Left = styled.div`
   display: flex;
   flex-direction: column;
   padding: 20px;
+  
 `;
 
 const Logo = styled.h1``;
@@ -88,7 +90,7 @@ const Footer = () => {
   return (
     <Container>
       <Left>
-        <Logo>XYZ</Logo>
+        <Logo>Quikai</Logo>
         <Desc>
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form, by injected
@@ -113,13 +115,13 @@ const Footer = () => {
         <Title>Useful Links</Title>
         <List>
           <ListItem>Home</ListItem>
-          <ListItem>Cart</ListItem>
-          <ListItem>Accessories</ListItem>
-          <ListItem>My Account</ListItem>
-          <ListItem>Order Tracking</ListItem>
-          <ListItem>Wishlist</ListItem>
-          <ListItem>Wishlist</ListItem>
+          <ListItem>Payment</ListItem>
+          <ListItem>Booking</ListItem>
+          <ListItem>Features</ListItem>
+          <ListItem>Blog</ListItem>
+          <ListItem>Pages</ListItem>
           <ListItem>Terms</ListItem>
+          <ListItem>Policy</ListItem>
         </List>
       </Center>
       <Right>
